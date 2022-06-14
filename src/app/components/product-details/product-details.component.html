@@ -9,10 +9,12 @@
           </div>
           <span  style="color: #333333;" class="fas fa-search search-icon"></span>
           </div>
-          <button routerLink="/cart" class="btn ">
+          <button  style="margin-left: 250px;" routerLink="/cart" class="btn ">
               <i style="font-size: 30px; color:white" class="fas fa-cart-plus"></i>
               <div style="font-size:10px" class="badge bg-danger">{{totalItem}}</div>
           </button>
+          <button style="color:white; background-color: #333333; border: none; margin-right: 30px;" routerLink="/login">Logout</button>
+
   </div>
 </header>
 <ng-container *ngIf="productDetails">
