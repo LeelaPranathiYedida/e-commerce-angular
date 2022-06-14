@@ -1,0 +1,78 @@
+.card {
+    height: 60vh;
+    margin: 25px;
+    padding: 25px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.center img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 162px;
+    width: 250px;
+    margin: 5px 0px;
+}
+
+.card-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem; */
+    border-collapse:collapse;
+}
+table table-responsive{
+    border-collapse:collapse;
+}
+
+.h2{
+    text-align: center;
+}
+.addtocart{
+    background-color:#333333;
+    color: white;
+}
+.addtocart:hover{
+    color: #333333;
+    background-color: #ffc761;
+
+}
+.shopmore{
+    color:white ;
+     background-color:#333333;
+}
+.shopmore:hover{
+    background-color:#ffc761 ;
+    color:#333333;
+}
+.form-control{
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    right: 38%;
+    top: 30%;
+    color: blue;
+    
+}
+.navbar-dark{
+    background-color: #333333;
+}
+.card-top{
+    background-color: #ffc761;
+    height:85px;
+}

@@ -1,0 +1,17 @@
+<div class="wrapper"> 
+    <div class="wrapper1">
+        <form [formGroup]="login" class="form">
+            <h2>LOGIN</h2>
+            <div class="inp">
+            <input type="email" placeholder="Enter Email" class="inp1" formControlName="email">
+            <input type="password" placeholder="Password" class="inp2" formControlName="password"></div>
+            <div class="btns">
+                <button (click)="loginSubmit(login.value)" type="button" class="btn btn-primary" [disabled]="login.invalid">Login</button>
+                <button (click)="goToSignup()" class="btn btn-secondary" type="button"> New User ? Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="wrapper2">
+    </div>
+</div>
+ 

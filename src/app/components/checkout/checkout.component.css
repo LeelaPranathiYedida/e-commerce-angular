@@ -1,0 +1,35 @@
+h2{
+    margin-top: 20%;
+    text-align: center;
+}
+.visit{
+    margin-left: 45%;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+}
+.visit:hover{
+    background-color: #ffc671;
+    color: #333333;
+}
+.navbar-dark{
+    background-color: #333333;
+}
+.card-top{
+    background-color: #ffc761;
+    height:85px;
+}
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    right: 38%;
+    top: 30%;
+    color: blue;
+    
+}
+.form-control{
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}

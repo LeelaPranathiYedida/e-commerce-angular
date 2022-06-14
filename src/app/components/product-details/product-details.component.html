@@ -1,0 +1,64 @@
+<header>
+  <div class="navbar navbar-dark  shadow-sm">
+      <div class="navbar-brand align-item-center d-flex">
+          <i class="fas fa-shipping-fast"style="font-size:40px;">&nbsp;
+          </i> 
+          <strong style="font-size:30px">Accenture</strong>
+          <div class="form-group">
+              <input type="text" placeholder="search for products" class="form-control">
+          </div>
+          <span  style="color: #333333;" class="fas fa-search search-icon"></span>
+          </div>
+          <button routerLink="/cart" class="btn ">
+              <i style="font-size: 30px; color:white" class="fas fa-cart-plus"></i>
+              <div style="font-size:10px" class="badge bg-danger">{{totalItem}}</div>
+          </button>
+  </div>
+</header>
+<ng-container *ngIf="productDetails">
+    <div class="container">
+    <h2 centre>Product Details</h2>
+      <div class="card-table">
+        <div class="cart-product">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>{{ productDetails.title }}</td>
+                      <td>
+                        <img style="width: 200px" [src]="productDetails.image" alt="" />
+                      </td>
+                      <td style="width: 25%">{{ productDetails.description }}</td>
+                      <th style="width: 12%"> {{ productDetails.price|currency:"INR" }}</th>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>
+                          <button routerLink="/header" class="btn shopmore">
+                            Shop More
+                          </button>
+                        </td>
+                        <td>
+                          <button
+                            class="btn addtocart"
+                            (click)="addtocart(productDetails)"
+                          >
+                            Add to cart
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        
